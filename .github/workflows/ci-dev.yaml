@@ -2,12 +2,12 @@
 name: ci-dev
 on:
   pull_request:
-    branches: ["dev"]
+    branches: ["master"]
   push:
-    branches: ["dev"]
+    branches: ["master"]
 jobs:
   ci:
-    uses: qiime2/distributions/.github/workflows/lib-ci-dev.yaml@dev
+    uses: lizgehret/distributions/.github/workflows/lib-ci-dev.yaml@dev
     with:
       distro: qiime2
       recipe-path: 'conda-recipe'
